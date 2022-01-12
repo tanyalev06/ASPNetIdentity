@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\WebApplication1\\WebApplication1.csproj": {}
+    "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\ASPNetIdentity\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\WebApplication1\\WebApplication1.csproj": {
+    "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\ASPNetIdentity\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\ASPNetIdentity\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\ASPNetIdentity\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\TanyaNout\\.nuget\\packages\\",
-        "outputPath": "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\WebApplication1\\obj\\",
+        "outputPath": "D:\\Тестовые задания\\Минское городское агентство обслуживания населения\\ASPNetIdentity\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TanyaNout\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,6 +57,10 @@
               "version": "[6.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.1, )"
             }
