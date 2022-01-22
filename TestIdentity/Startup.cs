@@ -41,9 +41,9 @@ namespace TestIdentity
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.IsDevelopment())    //если мы в процессе разработки
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();  //использовать страницы исключений для разраб-ков
             }
             else
             {
@@ -52,14 +52,14 @@ namespace TestIdentity
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles();  //поддержка статичных файлов в приложении (css, js и т.д.)
 
-            app.UseRouting();
+            app.UseRouting();      //система маршрутизации
 
             app.UseAuthentication();    // подключение аутентификации
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(endpoints =>             //использовать маршрутизацию
             {
                 endpoints.MapControllerRoute(name: "default",pattern: "{controller=Home}/{action=Index}/{id?}");
             });

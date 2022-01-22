@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿@*<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -45,4 +45,30 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+</html>*@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		@await Html.PartialAsync("MetatagsPartial")
+		@await Html.PartialAsync("CssPartial")
+	</head>
+	<body>
+		<div id="page-wrapper">
+			@await Html.PartialAsync("HeaderPartial")
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-4 col-12-medium">
+                                @RenderBody()  //динамически подставляется контент в завис от стр на которой находимся
+							</div>
+						</div>
+                        @await Html.PartialAsync("SidebarPartial")
+					</div>
+				</div>
+		@await Html.PartialAsync("FooterPartial")
+	</div>
+@await Html.PartialAsync("ScriptsPartial")
+
+	</body>
 </html>
